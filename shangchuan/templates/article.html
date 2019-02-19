@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block yemian %}文章管理界面{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/article.css') }}">
+{% endblock %}
+{% block main %}
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>操作界面</h4>
+            </div>
+            <div class="panel-body">
+                <h3 class="page-title">发布文章</h3>
+                <form action="" class="form-horizontal" method="POST">
+                    <div class="form-container">
+                        <div class="form-group">
+                            <textarea name="content" rows="6" placeholder="请输入文章内容" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary">立即发布</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

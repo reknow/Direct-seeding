@@ -1,0 +1,90 @@
+.patch_on .time_info{
+    font-size: 16px;
+    color: #1e8fdf;
+    padding: 25px 0 10px;
+}
+
+ul li{
+    border-bottom: 1px solid #888888;
+    border-bottom-style: dashed;
+    padding: 15px 0 30px 10px;
+}
+
+li{
+    list-style-type: none;
+    text-align: -webkit-match-parent;
+}
+
+.patch{
+    width: 680px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.center{
+    text-align: center;
+}
+
+body{
+        font-family: Microsoft YaHei;
+}
+
+.center p{
+    padding: 15px 0 10px;
+    font-size: 14px;
+    color: #111;
+    line-height: 22px;
+    text-align: justify;
+}
+
+ul{
+    list-style: none;
+}
+
+.qidai{
+    height: 36px;
+    line-height: 36px;
+    background-color: #E4E4E4;
+    color: #1d8fdf;
+    text-align: center;
+    margin-left: 2px;
+}
+
+#foot{
+    padding: 50px 0 30px 0;
+    clear: both;
+    background: #1387DA;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+
+#foot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#foot div{
+    width: 1002px;
+    margin: 0 auto 0 auto;
+}
+
+
+div{
+    display: block;
+}
+
+#foot a{
+    margin: 0 5px 0 11px;
+}
+
+.footer-bottom{
+    background: #1387DA;
+}
+
+.footer-bottom a{
+    margin: 0 5px 0 1px;
+    text-decoration: none;
+    color: #fff;
+}
+

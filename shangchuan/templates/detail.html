@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block title %}查看{% endblock %}
+{% block yemian %}图文查看界面{% endblock %}
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/detail.css') }}">
+{% endblock %}
+{% block main %}
+        <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>显示结果</h4>
+            </div>
+            <div class="panel-body">
+                <form action="" enctype="multipart/form-data" method="POST" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="image" class="control-label col-md-2">图片显示</label>
+                        <img src="{{ url_for('static', filename = 'image/' + photo.picture_path) }}" alt="" height="150" width="250" class="center_img">
+                    </div>
+                    <div class="form-container">
+                        <div class="form-group">
+                            <label for="body" class="control-label col-md-2">显示文章</label>
+                            <p>{{ photo.content }}</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+{% endblock %}

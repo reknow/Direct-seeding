@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block main %}
+        <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4>操作界面</h4>
+            </div>
+            <div class="panel-body">
+                <form action="" enctype="multipart/form-data" method="POST" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="image" class="control-label col-md-2">上传图片</label>
+                        <div class="col-md-6">
+                            <input type="file" name="file">
+                        </div>
+                    </div>
+                    <div class="from-container">
+                        <div class="form-group">
+                            <label for="body" class="control-label col-md-2">发布内容</label>
+                            <div class="col-md-6">
+                                <textarea name="content" rows="6" placeholder="请输入文章内容" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-offset-2">
+                            <button class="btn btn-primary">立即发布</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+{% endblock %}

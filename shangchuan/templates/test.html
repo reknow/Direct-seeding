@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+    <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+    <META HTTP-EQUIV="Refresh" CONTENT="100">
+    <!--&lt;!&ndash;禁用浏览器缓存&ndash;&gt;-->
+
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'test/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'test/lrtk.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename = 'css/test.css') }}">
+    <title>安恒杯-HNCTF</title>
+
+</head>
+<body>
+<div class="main">
+        <div class="zhibo">
+            <div style="position: relative">
+                    <img src="{{ url_for('static', filename = 'images/11.png') }}" height="200" width="740">
+                    <div style="position: absolute; left: 10px; top: 50px" id="title">
+                        <h2>安恒杯-河南省第三届信息安全技术大赛</h2>
+                    </div>
+            </div>
+            <div id="zhuti">
+                <div id="zhiding" class="time">置顶</div>
+                    <article class="message" id="firstMessage">现场直播</article>
+            </div>
+            <ul id="show">
+                {% for i in photo %}
+                    <li>
+                        <div class="patch">
+                            <div class="patch_on">
+                                <div class="time_info">
+                                    <strong>{{ i.create_time }}</strong>
+                                </div>
+                                <div class="center">
+                                    <img src="{{ url_for('static', filename = 'image/' + i.picture_path) }}" height="446" width="594" class="center_img">
+                                    <p>{{ i.content }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <p>{% endfor %}</p>
+            </ul>
+            <div class="qidai">内容已经加载完毕，敬请期待更多内容</div>
+        </div>
+</div>
+<script type="text/javascript" src="{{ url_for('static', filename = 'test/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename = 'test/jquery.imgbox.pack.js') }}"></script>
+
+{#<script type="text/javascript" src="{{ url_for('static', filename = 'test/jquery-3.2.1.js') }}"></script>#}
+<script type="text/javascript" src="{{ url_for('static', filename = 'test/test.js') }}"></script>
+
+<!--foot开始-->
+<div id="foot" >
+    <div>
+        <a href="http://www.cs.zzti.edu.cn/bkjx/aqgfxly.htm" rel="nofollow">关于我们</a>|<a
+         href="https://weibo.com/dropsec?is_hot=1" rel="nofollow">实验室微博</a>|<a
+         href="http://ctf.dropsec.xyz:8080/" rel="nofollow">实验室官网</a>
+        <br/>
+        "DROPS攻防实验室-安全研发小组版权所有"
+    </div>
+</div>
+</body>
+    <script>
+
+    </script>
+</html>
